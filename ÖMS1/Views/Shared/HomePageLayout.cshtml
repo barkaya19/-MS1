@@ -1,0 +1,55 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>HomePageLayout</title>
+</head>
+<style>
+    .kutu {
+        height: 380px;
+        width: 160px;
+        background-color: #DCDCDC;
+    }
+    .kutu1{
+        height:50px;
+        width:160px;
+         margin-bottom:10px;
+    }
+    .kutu2 {
+        height: 50px;
+        width: 160px;
+       
+    }
+    .kutu3 {
+        height: 50px;
+        width: 160px;
+    }
+    .kutu4 {
+        height: 50px;
+        width: 160px;
+    }
+</style>
+<body>
+
+    <div class="kutu">
+        <br />
+        <a href="#"><div class="kutu1"><h3 style="margin-left:40px; margin-top:-10px;">Öms Al</h3></div></a>
+        <br />
+        <a href="#"><div class="kutu2"><h3 style="margin-left:40px;">Kitapların Durumu</h3></div></a>
+        <br />
+        <a href="#"><div class="kutu3"><h3 style="margin-left:40px;">Kitaplar</h3></div></a>
+        <br />
+        <a href="#"><div class="kutu4"><h3 style="margin-left:40px;">Çıkış Yap</h3></div></a>
+     </div>
+
+    <div style="margin-left:500px; margin-top:-350px;">
+        @RenderBody()
+    </div>
+</body>
+</html>

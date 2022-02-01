@@ -1,0 +1,36 @@
+﻿@using EntityLayer.Concrete
+@model List<Book>
+@{
+    ViewData["Title"] = "BookList";
+    Layout = "~/Views/Shared/HomePageLayout.cshtml";
+}
+
+
+
+<h2 style="margin-left:40px;">Ürün özellikleri</h2>
+
+
+<br />
+@foreach (var item in Model)
+{
+    
+
+    <div>
+        <table>
+            <tr>
+                <th>ÜrüId</th>
+                <th>Kitap Adı</th>
+                <th>Yazar</th>
+                <th>Sayfa Sayısı</th>
+                <th>Özet</th>
+            </tr>
+            <tr>
+                <td>@item.BookId</td>
+                <td>@item.BookName</td>
+                <td>@item.Writer</td>
+                <td>@item.PageNumber</td>
+                <td>@item.Summary</td>
+            </tr>
+        </table>
+    </div>
+}
